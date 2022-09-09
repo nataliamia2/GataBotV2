@@ -11,58 +11,50 @@ let username = conn.getName(who)
 let kai = 'https://i.imgur.com/8fK4h6F.jpg' 
 let vn = './media/menugatabot.mp3'
 let menu =`
-╭━〘 🐈⚡️🐈⚡️🐈⚡️🐈⚡️🐈 〙━╮
- ‖ ֎┉┉┉⊰ 𝙂𝙖𝙩𝙖𝘽𝙤𝙩 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨 ⊱┉┉┉֍
- ‖ 💖 *¡𝗛ola! ${username}* 💖
- ‖    ֎┉┉┉┉┉┉⊰ 🌟 ⊱┉┉┉┉┉┉┉֍
- ‖
- ‖ Ⓜ️ *_MENÚ COMPLETO_* Ⓜ️
- ‖⇶ _${usedPrefix}menucompleto | mcompleto_
- ‖
- ‖ 🔖 *_INFORMACIÓN DEL MENÚ_* 🔖
- ‖⇶ _${usedPrefix}menuinfobot | menuinfo_
- ‖
- ‖ 🎮 *_MENÚ DE JUEGOS_* 🎮
- ‖⇶ _${usedPrefix}menujuego | menujuegos_
- ‖ 
- ‖ 🚀 *_MENÚ DE DESCARGAS_* 🚀
- ‖⇶ _${usedPrefix}menudescarga | menudescargas_
- ‖
- ‖ 🔐 *_GESTIÓN DE GRUPO_* 🔐
- ‖⇶ _${usedPrefix}menugrupo | menugrupos_
- ‖
- ‖ 🎨 *_MENÚ DE CREACIÓN_* 🎨
- ‖⇶ _${usedPrefix}menucreador | menucreacion_
- ‖ 
- ‖ 🪅 *_ANIME/RANDOMS_* 🪅
- ‖⇶ _${usedPrefix}menurandom | menuextras_
- ‖
- ‖ 🔞 *_MENÚ +18_* 🔞
- ‖⇶ _${usedPrefix}menu18 | labiblia_
- ‖
- ‖ 🔊 *_MENÚ DE AUDIOS_* 🔊
- ‖⇶ _${usedPrefix}menuaudio | menuaudios_
- ‖ 
- ‖ 📦 *_MENÚ CAJA ALMACENAMIENTO_* 📦
- ‖⇶ _${usedPrefix}menucaja | menualmacen_
- ‖
- ‖ 👤 *_MENÚ CHAT ANÓNIMO_* 👤
- ‖⇶ _${usedPrefix}menuchat | menuanonimo_
- ‖
- ‖ 💮 *_MENÚ LOGOS PERSONALIZADO_* 💮
- ‖⇶ _${usedPrefix}menucrearlogos | mlogos_
- ‖ 
- ‖ 💎 *_MENU PARA PROPIETARIO/A_* 💎
- ‖⇶ _${usedPrefix}menupropietario_
- ‖
- ‖ ✅ *_CUENTAS OFICIALES GATABOT_* ✅
- ‖⇶ _${usedPrefix}cuentasgatabot | cuentasgb_
- ‖
-╰━〘 🐈🌟🐈🌟🐈🌟🐈🌟🐈 〙━╯
-𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨`.trim()
+ ╌╌╌───  *Vélɑut* | *Bot*  ───╌╌╌
+  *¡Hola! ${username}* ♡
+ 
+ ── ▪️ *MENÚ COMPLETO* 
+  ${usedPrefix}menucompleto | mcompleto
+ 
+ ── ▪️ *MENÚ JUEGOS* 
+  ${usedPrefix}menujuego | menujuegos
+ 
+ ── ▪️ *MENÚ DESCARGAS* 
+  ${usedPrefix}menudescarga | menudescargas
+ 
+ ── ▪️ *MENÚ GRUPOS* 
+  ${usedPrefix}menugrupo | menugrupos
+ 
+ ── ▪️ *MENÚ CREACIÓN* 
+  ${usedPrefix}menucreador | menucreacion
+ 
+ ── ▪️ *MENÚ RANDOM* 
+  ${usedPrefix}menurandom | menuextras
+ 
+ ── ▪️ *MENÚ +18* 
+  ${usedPrefix}menu18 | labiblia
+ 
+ ── ▪️ *MENÚ AUDIOS* 
+  ${usedPrefix}menuaudio | menuaudios
+ 
+ ── ▪️ *MENÚ ALMACÉN* 
+  ${usedPrefix}menucaja | menualmacen
+ 
+ ── ▪️ *MENÚ ANÓNIMO* 
+  ${usedPrefix}menuchat | menuanonimo
+ 
+ ── ▪️ *MENÚ LOGOS* 
+  ${usedPrefix}menucrearlogos | mlogos
+ 
+ ── ▪️ *MENÚ PROPIETARIO* 
+  ${usedPrefix}menupropietario
+ 
+╌─╌─╌─╌─╌─╌─╌─╌─╌─
+`.trim()
 conn.send3ButtonLoc(m.chat, (await fetch(kai)).buffer(), `
-⁖ᯓ፨҈༺ 𝙂𝙖𝙩𝙖𝘽𝙤𝙩 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨 ༻፨҈ᯓ⁖
-`.trim(), menu, 'Ⓜ️ 𝙈𝙀𝙉𝙐 𝘾𝙊𝙈𝙋𝙇𝙀𝙏𝙊 Ⓜ️', `#mcompleto`, '🔖 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 𝘿𝙀𝙇 𝙈𝙀𝙉𝙐 🔖', `#menuinfobot`, '🎮 𝙈𝙀𝙉𝙐 𝘿𝙀 𝙅𝙐𝙀𝙂𝙊𝙎 🎮', `#menujuego`, m, false, { contextInfo: { mentionedJid }})
+⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀ 🕊
+`.trim(), menu, '▫️ 𝗠𝗘𝗡𝗨 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗢 ▫️', `#mcompleto`, '▪️ 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗖𝗜𝗢𝗡 ▪️', `#menuinfobot`, '▫️ 𝗠𝗘𝗡𝗨 𝗝𝗨𝗘𝗚𝗢𝗦 ▫️', `#menujuego`, m, false, { contextInfo: { mentionedJid }})
  await await await await await await conn.sendFile(m.chat, vn, 'menugatabot.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true 
